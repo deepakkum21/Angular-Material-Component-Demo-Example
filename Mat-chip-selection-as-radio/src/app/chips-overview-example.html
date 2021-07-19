@@ -1,0 +1,27 @@
+<mat-chip-list aria-label="Fish selection" [selectable]="true">
+  <mat-chip
+    (click)="matClick('oneFish')"
+    [selected]="isSelected === 'one'"
+    color="warn"
+    >One fish</mat-chip
+  >
+  <mat-chip (click)="matClick('twoFish')" [selected]="isSelected === 'two'"
+    >Two fish</mat-chip
+  >
+  <mat-chip
+    color="primary"
+    (click)="matClick('Primary Fish')"
+    [selected]="isSelected === 'primary'"
+    >Primary fish</mat-chip
+  >
+  <mat-chip
+    color="accent"
+    (click)="matClick('Accent Fish')"
+    [selected]="isSelected === 'accent'"
+    >Accent fish</mat-chip
+  >
+</mat-chip-list>
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
